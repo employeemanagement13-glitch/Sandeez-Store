@@ -3,7 +3,7 @@ import { dark } from "@clerk/themes";
 
 export default function Page() {
     return (
-        <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black flex items-center justify-center p-4">
+        <div className="min-h-screen bg-black flex items-center justify-center p-4">
             <div className="w-full max-w-md">
                 <SignUp
                     appearance={{
@@ -23,8 +23,8 @@ export default function Page() {
                         elements: {
                             // Main container
                             rootBox: "mx-auto",
-                            card: "bg-black/80 backdrop-blur-sm border border-neutral-800 rounded-xl shadow-2xl shadow-blue-500/10",
-                            cardBox: "p-8 sm:p-10",
+                            card: "",
+                            cardBox: "",
                             
                             // Header
                             headerTitle: "text-white font-bold text-2xl",
