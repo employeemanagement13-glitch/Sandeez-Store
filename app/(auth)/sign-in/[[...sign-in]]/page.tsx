@@ -3,7 +3,7 @@ import { dark } from '@clerk/themes';
 
 export default function SignInPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-black flex flex-col items-center justify-center p-4">
+    <div className="min-h-screen bg-black flex flex-col items-center justify-center p-4">
       {/* Optional: Add your logo/branding */}
       <div className="mb-8 text-center">
         <h1 className="text-3xl font-bold text-white mb-2">Welcome Back</h1>
@@ -16,7 +16,7 @@ export default function SignInPage() {
             baseTheme: dark, // Start with Clerk's dark theme as base
             elements: {
               // Main container styling
-              card: "bg-gray-900/90 backdrop-blur-sm border border-gray-800 rounded-2xl shadow-2xl",
+              card: "bg-neutral-900 border border-gray-800 rounded-2xl shadow-2xl",
               
               // Header
               headerTitle: "text-white font-bold text-2xl",
@@ -24,11 +24,11 @@ export default function SignInPage() {
               
               // Form fields
               formFieldLabel: "text-gray-300 font-medium",
-              formFieldInput: "bg-gray-800 border-gray-700 text-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200",
+              formFieldInput: "bg-neutral-800 border-gray-700 text-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200",
               formFieldInputShowPasswordButton: "text-gray-400 hover:text-white",
               
               // Buttons
-              formButtonPrimary: "bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200 hover:shadow-lg hover:scale-[1.02]",
+              formButtonPrimary: "bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200 hover:shadow-lg",
               formButtonReset: "text-gray-400 hover:text-white transition-colors",
               
               // Social buttons
