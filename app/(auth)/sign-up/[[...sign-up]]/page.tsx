@@ -10,7 +10,7 @@ export default function Page() {
                         baseTheme: dark, // Use the built-in dark theme
                         variables: {
                             colorPrimary: "#3b82f6",
-                            colorBackground: "#000000",
+                            colorBackground: "#101010",
                             colorText: "#ffffff",
                             colorTextSecondary: "#a3a3a3",
                             colorInputBackground: "#000000",
@@ -32,7 +32,7 @@ export default function Page() {
                             
                             // Form fields
                             formFieldLabel: "text-white font-medium text-sm mb-2",
-                            formFieldInput: "bg-black border border-neutral-800 text-white rounded-lg px-4 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 hover:border-neutral-700",
+                            formFieldInput: "bg-[#161616] border border-neutral-800 text-white rounded-lg px-4 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 hover:border-neutral-700",
                             formFieldInputGroup: "",
                             
                             // Buttons
