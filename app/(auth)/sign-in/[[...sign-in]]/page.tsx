@@ -32,7 +32,7 @@ export default function SignInPage() {
               formButtonReset: "text-gray-400 hover:text-white transition-colors",
               
               // Social buttons
-              socialButtonsBlockButton: "bg-[#161616] border-gray-700 text-white hover:bg-[#0f0f0f] transition-all duration-200",
+              socialButtonsBlockButton: "bg-black border border-neutral-800 text-white hover:bg-neutral-900 hover:border-neutral-700 transition-all duration-200 rounded-lg",
               socialButtonsBlockButtonText: "text-gray-300 font-medium",
               socialButtonsBlockButtonArrow: "text-gray-400",
               
