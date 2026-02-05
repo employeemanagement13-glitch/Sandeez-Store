@@ -59,20 +59,6 @@ export default function SignInPage() {
               
               // OTP input
               otpCodeFieldInput: "bg-gray-800 border-gray-700 text-white focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20",
-            },
-            variables: {
-              colorPrimary: "#3b82f6", // blue-500
-              colorText: "#ffffff",
-              colorTextSecondary: "#9ca3af", // gray-400
-              colorTextOnPrimaryBackground: "#ffffff",
-              colorBackground: "#111827", // gray-900
-              colorInputBackground: "#1f2937", // gray-800
-              colorInputText: "#ffffff",
-            },
-            layout: {
-              socialButtonsPlacement: "bottom", // or "top" based on preference
-              socialButtonsVariant: "blockButton", // or "iconButton"
-              logoPlacement: "inside", // or "none"
             }
           }}
           routing="path"
