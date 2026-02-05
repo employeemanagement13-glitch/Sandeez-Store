@@ -16,7 +16,7 @@ export default function SignInPage() {
             baseTheme: dark, // Start with Clerk's dark theme as base
             elements: {
               // Main container styling
-              card: "bg-neutral-900 border border-gray-800 rounded-2xl shadow-2xl",
+              card: "bg-[#101010] border border-gray-800 rounded-2xl shadow-2xl",
               
               // Header
               headerTitle: "text-white font-bold text-2xl",
@@ -24,7 +24,7 @@ export default function SignInPage() {
               
               // Form fields
               formFieldLabel: "text-gray-300 font-medium",
-              formFieldInput: "bg-neutral-800 border-gray-700 text-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200",
+              formFieldInput: "bg-[#161616] border-gray-700 text-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200",
               formFieldInputShowPasswordButton: "text-gray-400 hover:text-white",
               
               // Buttons
@@ -32,7 +32,7 @@ export default function SignInPage() {
               formButtonReset: "text-gray-400 hover:text-white transition-colors",
               
               // Social buttons
-              socialButtonsBlockButton: "bg-gray-800 border-gray-700 text-white hover:bg-gray-700 transition-all duration-200",
+              socialButtonsBlockButton: "bg-[#161616] border-gray-700 text-white hover:bg-[#0f0f0f] transition-all duration-200",
               socialButtonsBlockButtonText: "text-gray-300 font-medium",
               socialButtonsBlockButtonArrow: "text-gray-400",
               
