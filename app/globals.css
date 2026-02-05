@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+    --card: 0 0% 7%;
+    --card-border: 0 0% 15%;
+    --muted: 0 0% 20%;
+    --accent: 0 0% 96%;
+  }
+
+  * {
+    @apply border-gray-800;
+  }
+
+  html {
+    /* Achieving a crisp look with Poppins and base sizing */
+    font-size: 14px;
+    background-color: #000;
+    scroll-behavior: smooth;
+    font-family: 'Outfit', sans-serif;
+  }
+
+  body {
+    @apply bg-black text-white antialiased;
+    /* Achievement of the requested 90% width look */
+    max-width: 1600px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    /* Center at 90% of screen */
+    box-shadow: 0 0 150px rgba(0, 0, 0, 1);
+    border-left: 1px solid #111;
+    border-right: 1px solid #111;
+    overflow-x: hidden;
+  }
+
+  /* Ensure background outside body is also black */
+  html {
+    background: #050505;
+  }
+}
+
+@layer components {
+
+  /* Containers scale with body */
+  .max-w-7xl {
+    max-width: 100%;
+  }
+
+  .max-w-6xl {
+    max-width: 90%;
+  }
+
+  .max-w-4xl {
+    max-width: 80%;
+  }
+
+  /* Primary button - premium compact */
+  .btn-primary {
+    @apply bg-white text-black px-5 py-2.5 rounded-full font-bold text-xs hover:bg-neutral-200 transition-all active:scale-95 tracking-tight;
+  }
+
+  /* Secondary button */
+  .btn-secondary {
+    @apply bg-transparent text-white border border-neutral-800 px-5 py-2.5 rounded-full font-bold text-xs hover:border-white transition-all active:scale-95 tracking-tight;
+  }
+
+  /* Input fields - refined */
+  .input-field {
+    @apply w-full px-4 py-2.5 bg-neutral-900 border border-neutral-800 rounded-lg text-xs text-white placeholder-neutral-600 focus:outline-none focus:ring-1 focus:ring-white transition-all font-medium;
+  }
+
+  /* Search bar refined */
+  .search-input {
+    @apply bg-black border border-neutral-800 text-white placeholder-gray-500 px-5 py-2.5 rounded-full text-xs focus:outline-none focus:ring-1 focus:ring-white transition-all duration-300 w-full;
+  }
+
+  /* Card components */
+  .card {
+    @apply bg-neutral-900 rounded-2xl border border-neutral-800 p-6 transition-all duration-300 hover:border-neutral-700/50;
+  }
+
+  .product-card {
+    @apply bg-black border border-neutral-800 rounded-2xl overflow-hidden transition-all duration-500 hover:border-neutral-600;
+  }
+
+  .nav-link {
+    @apply text-neutral-400 hover:text-white transition-colors duration-200 text-[13px] font-medium tracking-tight;
+  }
+}
