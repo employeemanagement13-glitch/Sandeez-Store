@@ -1,4 +1,5 @@
 import { SignUp } from "@clerk/nextjs";
+import { dark } from "@clerk/themes";
 
 export default function Page() {
     return (
@@ -6,15 +7,18 @@ export default function Page() {
             <div className="w-full max-w-md">
                 <SignUp
                     appearance={{
-                        baseTheme: {
-                            variables: {
-                                colorPrimary: "#3b82f6",
-                                colorBackground: "#000000",
-                                colorText: "#ffffff",
-                                colorTextSecondary: "#a3a3a3",
-                                colorInputBackground: "#000000",
-                                colorInputText: "#ffffff",
-                            }
+                        baseTheme: dark, // Use the built-in dark theme
+                        variables: {
+                            colorPrimary: "#3b82f6",
+                            colorBackground: "#000000",
+                            colorText: "#ffffff",
+                            colorTextSecondary: "#a3a3a3",
+                            colorInputBackground: "#000000",
+                            colorInputText: "#ffffff",
+                            borderRadius: "0.5rem",
+                            colorDanger: "#ef4444",
+                            colorSuccess: "#10b981",
+                            colorWarning: "#f59e0b",
                         },
                         elements: {
                             // Main container
@@ -34,7 +38,6 @@ export default function Page() {
                             // Buttons
                             formButtonPrimary: "w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20 active:scale-95",
                             formButtonReset: "text-neutral-400 hover:text-white transition-colors text-sm",
-                            formButtonArrow: "group-hover:translate-x-1 transition-transform",
                             
                             // Social buttons
                             socialButtonsBlockButton: "bg-black border border-neutral-800 text-white hover:bg-neutral-900 hover:border-neutral-700 transition-all duration-200 rounded-lg",
@@ -80,23 +83,10 @@ export default function Page() {
                             loading: "text-white",
                             spinner: "text-blue-500",
                         },
-                        variables: {
-                            colorPrimary: "#3b82f6",
-                            colorText: "#ffffff",
-                            colorTextSecondary: "#a3a3a3",
-                            colorBackground: "#000000",
-                            colorInputBackground: "#000000",
-                            colorInputText: "#ffffff",
-                            borderRadius: "0.5rem",
-                            colorDanger: "#ef4444",
-                            colorSuccess: "#10b981",
-                            colorWarning: "#f59e0b",
-                        },
                         layout: {
                             socialButtonsPlacement: "bottom",
                             socialButtonsVariant: "blockButton",
                             logoPlacement: "inside",
-                            logoImageUrl: "/logo.png", // Add your logo URL here
                             showOptionalFields: false,
                         }
                     }}
@@ -104,9 +94,7 @@ export default function Page() {
                     path="/sign-up"
                     signInUrl="/sign-in"
                     redirectUrl="/dashboard"
-                    unsafeMetadata={{ signup_source: "website" }}
                     fallbackRedirectUrl="/"
-                    forceRedirectUrl="/onboarding"
                 />
                 
                 {/* Additional info */}
