@@ -32,8 +32,8 @@ export default function Page() {
                             
                             // Form fields
                             formFieldLabel: "text-white font-medium text-sm mb-2",
-                            formFieldInput: "bg-black border border-neutral-800 text-white rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 hover:border-neutral-700",
-                            formFieldInputGroup: "space-y-4",
+                            formFieldInput: "bg-black border border-neutral-800 text-white rounded-lg px-4 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 hover:border-neutral-700",
+                            formFieldInputGroup: "",
                             
                             // Buttons
                             formButtonPrimary: "w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20 active:scale-95",
