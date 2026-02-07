@@ -33,17 +33,11 @@ export default function Newsletter() {
 
             // 2. Send email via EmailJS
             const templateParams = {
-                name: 'Dehleez Pakistan',
+                name: 'Sandeez Pakistan',
                 time: new Date().toLocaleString(),
-                message: 'Congractulations! You have been subscribed to our newsletter. You will now receive updates on new arrivals and exclusive offers. For more information, our customer support is always available at dehleezpakistan1@gmail.com or WhatsApp at +92 316 1234567, all handles on linktree https://linktr.ee/dehleezpakistan.  We will be back soon with more exciting products. Stay tuned!',
+                message: 'Congractulations! You have been subscribed to our newsletter. You will now receive updates on new arrivals and exclusive offers. For more information, our customer support is always available at sandeez@gmail.com or WhatsApp at +92 316 1234567, all handles on linktree https://linktr.ee/sandeez.  We will be back soon with more exciting products. Stay tuned!',
                 to_email: email // Assuming we want to notify someone or send a confirmation
             }
-
-            // The user provided the credentials in .env.local
-            // NEXT_PUBLIC_SERVICE_ID=service_f8lraqh
-            // NEXT_PUBLIC_TEMPLATE_ID=template_q78xhb6
-            // NEXT_PUBLIC_PUBLIC_KEY=gYLpPM7sNFwCaxX52
-
             await emailjs.send(
                 process.env.NEXT_PUBLIC_SERVICE_ID!,
                 process.env.NEXT_PUBLIC_TEMPLATE_ID!,
