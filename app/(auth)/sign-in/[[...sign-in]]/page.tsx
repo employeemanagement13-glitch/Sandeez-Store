@@ -72,7 +72,7 @@ export default function SignInPage() {
           }}
           routing="path"
           path="/sign-in"
-          redirectUrl="/admin/dashboard"
+          redirectUrl="/admin/"
           signUpUrl="/sign-up"
         />
       </div>
