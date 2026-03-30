@@ -93,7 +93,7 @@ export default function Page() {
                     routing="path"
                     path="/sign-up"
                     signInUrl="/sign-in"
-                    redirectUrl="/admin/dashboard"
+                    redirectUrl="/admin/"
                     fallbackRedirectUrl="/"
                 />
                 
